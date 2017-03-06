@@ -63,7 +63,7 @@ public class Sort {
 
         source[startIndex] = pivot;
 
-        quickSortRecursive(source, start, startIndex);
+        quickSortRecursive(source, start, startIndex - 1);
         quickSortRecursive(source, startIndex + 1, end);
 
         return source;
